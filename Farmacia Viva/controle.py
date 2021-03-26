@@ -7,6 +7,11 @@ class JanelaPrincipal:
         self.janela = janela
 
         self.botoes_principais()
+
+        self.janela.frame_editar.close()
+        self.janela.frame_ler.close()
+        self.janela.frame_escrever.show()  
+
         janela.show()
         self.app.exec()
 
@@ -21,6 +26,7 @@ class Editar:
         self.janela = janela
 
         self.janela.frame_escrever.close()
+        self.janela.frame_ler.close()
         self.janela.frame_editar.show()  
           
 
@@ -28,8 +34,9 @@ class Escrever:
     def __init__(self, janela) -> None:
         self.janela = janela
 
-        self.janela.frame_editar.show()
-        self.janela.frame_escrever.show()
+        self.janela.frame_editar.close()
+        self.janela.frame_ler.close()
+        self.janela.frame_escrever.show() 
 
 
 class Ler:
@@ -37,7 +44,8 @@ class Ler:
         self.janela = janela
 
         self.janela.frame_editar.close()
-        self.janela.frame_escrever.close() 
+        self.janela.frame_escrever.close()
+        self.janela.frame_ler.show() 
 
 
 JanelaPrincipal(app=QtWidgets.QApplication([]), janela=uic.loadUi("Farmacia.ui"))
