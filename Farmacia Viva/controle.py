@@ -36,7 +36,28 @@ class Escrever:
 
         self.janela.frame_editar.close()
         self.janela.frame_ler.close()
-        self.janela.frame_escrever.show() 
+        self.janela.frame_escrever.show()
+
+    def colheita(self):
+        pass
+
+    def corte(self):
+        pass
+
+    def secagem(self):
+        pass
+
+    def controle(self):
+        pass
+
+    def cor(self):
+        pass
+
+    def odor(self):
+        pass
+
+    def embalagem(self):
+        pass
 
 
 class Ler:

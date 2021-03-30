@@ -9,8 +9,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>931</width>
-    <height>498</height>
+    <width>1151</width>
+    <height>822</height>
    </rect>
   </property>
   <property name="mouseTracking">
@@ -30,7 +30,20 @@
     <item>
      <layout class="QHBoxLayout" name="horizontalLayout">
       <item>
-       <widget class="QGraphicsView" name="graphicsView"/>
+       <widget class="QGraphicsView" name="graphicsView">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+          <horstretch>170</horstretch>
+          <verstretch>131</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777196</width>
+          <height>16777215</height>
+         </size>
+        </property>
+       </widget>
       </item>
       <item>
        <widget class="QGraphicsView" name="graphicsView_2">
@@ -38,9 +51,9 @@
          <bool>true</bool>
         </property>
         <property name="sizePolicy">
-         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
+         <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+          <horstretch>170</horstretch>
+          <verstretch>100</verstretch>
          </sizepolicy>
         </property>
        </widget>
@@ -51,6 +64,13 @@
      <layout class="QHBoxLayout" name="horizontalLayout_2">
       <item>
        <widget class="QPushButton" name="botao_escrever">
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
         <property name="text">
          <string>Escrever</string>
         </property>
@@ -58,6 +78,13 @@
       </item>
       <item>
        <widget class="QPushButton" name="botao_ler">
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
         <property name="text">
          <string>Ler</string>
         </property>
@@ -65,6 +92,13 @@
       </item>
       <item>
        <widget class="QPushButton" name="botao_editar">
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
         <property name="text">
          <string>Editar</string>
         </property>
@@ -84,20 +118,20 @@
        <enum>QFrame::Raised</enum>
       </property>
       <layout class="QGridLayout" name="gridLayout_2">
-       <item row="1" column="2">
-        <widget class="QLineEdit" name="lineEdit_2"/>
-       </item>
        <item row="1" column="1">
         <widget class="QLineEdit" name="lineEdit_3"/>
        </item>
-       <item row="5" column="0" colspan="4">
-        <widget class="QTableView" name="tableView"/>
+       <item row="1" column="2">
+        <widget class="QLineEdit" name="lineEdit_2"/>
        </item>
        <item row="1" column="0">
         <widget class="QLineEdit" name="lineEdit"/>
        </item>
        <item row="1" column="3">
         <widget class="QLineEdit" name="lineEdit_4"/>
+       </item>
+       <item row="5" column="0" colspan="4">
+        <widget class="QTableView" name="tableView"/>
        </item>
       </layout>
      </widget>
@@ -108,7 +142,7 @@
        <bool>true</bool>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(0, 85, 0);</string>
+       <string notr="true">background-color: rgb(85, 85, 127);</string>
       </property>
       <property name="frameShape">
        <enum>QFrame::StyledPanel</enum>
@@ -117,15 +151,136 @@
        <enum>QFrame::Raised</enum>
       </property>
       <layout class="QGridLayout" name="gridLayout_3">
-       <item row="0" column="0">
-        <widget class="QPushButton" name="pushButton">
-         <property name="text">
-          <string>PushButton</string>
+       <item row="4" column="0" colspan="2">
+        <widget class="QFrame" name="frame">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 85, 127);
+background-color: rgb(255, 170, 0);</string>
          </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_5">
+          <item row="0" column="0">
+           <widget class="QLineEdit" name="lineEdit_7"/>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLineEdit" name="lineEdit_10"/>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="lineEdit_8"/>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLineEdit" name="lineEdit_9"/>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLineEdit" name="lineEdit_11"/>
+          </item>
+          <item row="2" column="1">
+           <widget class="QLineEdit" name="lineEdit_12"/>
+          </item>
+         </layout>
         </widget>
        </item>
-       <item row="1" column="0">
-        <widget class="QTableView" name="tableView_2"/>
+       <item row="3" column="0" colspan="2" alignment="Qt::AlignHCenter">
+        <widget class="QFrame" name="frame_4">
+         <property name="maximumSize">
+          <size>
+           <width>1113</width>
+           <height>105</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(170, 170, 0);
+background-color: rgb(255, 170, 0);</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_8">
+          <item row="1" column="1">
+           <widget class="QFrame" name="frame_3">
+            <property name="maximumSize">
+             <size>
+              <width>499</width>
+              <height>56</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_7">
+             <item row="1" column="0">
+              <widget class="QLineEdit" name="lineEdit_5"/>
+             </item>
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_3">
+               <property name="text">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Seleção&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="0" column="0" colspan="2">
+           <widget class="QLabel" name="label_4">
+            <property name="maximumSize">
+             <size>
+              <width>1004</width>
+              <height>23</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;Escrever Dados&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QFrame" name="frame_2">
+            <property name="maximumSize">
+             <size>
+              <width>499</width>
+              <height>56</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_6">
+             <item row="1" column="0">
+              <widget class="QLabel" name="label_2">
+               <property name="text">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;Número do Lote&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QLineEdit" name="lineEdit_6"/>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
        </item>
       </layout>
      </widget>
@@ -165,7 +320,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>931</width>
+     <width>1151</width>
      <height>21</height>
     </rect>
    </property>
